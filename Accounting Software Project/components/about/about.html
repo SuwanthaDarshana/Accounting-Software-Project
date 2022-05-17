@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://css.gg/close.css" rel="stylesheet" />
+    <link href="https://css.gg/menu.css" rel="stylesheet" />
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="about-style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-links" id="navLinks">
+        <i class="gg gg-close" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="../../index.html">HOME</a></li>
+          <li><a href="../theory/theory.html">THEORY</a></li>
+          <li>
+            <a href="../calculation/calculation.html">CALCULATIONS</a>
+          </li>
+        </ul>
+      </div>
+      <i class="gg gg-menu" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="about-section">
+      <h1>About Us</h1>
+    </div>
+
+    <h2 class="team-title">Our Team</h2>
+
+    <div class="team-container">
+      <table class="team-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Index No</th>
+          </tr>
+         
+        </thead>
+        <tbody>
+          <tr>
+            <td>Leader</td>
+            <td>Wijesekera C.K</td>
+            <td>204234F</td>
+          </tr>
+          <tr>
+            <td>Member 1</td>
+            <td>Karunarathna W.A.K.C.N</td>
+            <td>204094A</td>
+          </tr>
+          <tr>
+            <td>Member 2</td>
+            <td>Liyanage V.P.S</td>
+            <td>204116V</td>
+          </tr>
+          <tr>
+            <td>Member 3</td>
+            <td>Desilva K.A.S</td>
+            <td>204032J</td>
+          </tr>
+          <tr>
+            <td>Member 4</td>
+            <td>Kariyapperuma K.A.S.D</td>
+            <td>204093U</td>
+          </tr>
+          <tr>
+            <td>Member 5</td>
+            <td>Somarathne K.G.P.P</td>
+            <td>204246T</td>
+          </tr>
+          <tr>
+            <td>Member 6</td>
+            <td>De Mel W.G.C.D</td>
+            <td>204245N</td>
+          </tr>
+          <tr>
+            <td>Member 7</td>
+            <td>Mahathanthri M.H.H</td>
+            <td>204221G</td>
+          </tr>
+          <tr>
+            <td>Member 8</td>
+            <td>Manohara U.H</td>
+            <td>204125X</td>
+          </tr>
+          <tr>
+            <td>Member 9</td>
+            <td>Fernando P.H.C.S.G</td>
+            <td>204054D</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <section id="footer">
+      <div class="footer-dark">
+        <footer>
+          <div class="container">
+            <div class="col-md-6 item text">
+              <h4>Team Revolution</h4>
+              <p><i>Winning together</i></p>
+            </div>
+            <p class="copyright">Revolution © 2022</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <!--javascript for toggle menu-->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

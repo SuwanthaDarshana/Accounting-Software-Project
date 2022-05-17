@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.header{
+    text-align: center;
+    padding: 40px;
+    background-color: #286bfd;
+    font-size: 20px;
+    color: aliceblue;
+
+}
+.p_cost{
+    margin: 30px;
+    background-color: rgb(241, 247, 247);
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    
+}
+.img{
+    text-align: center;
+}
+
+
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #286bfd;
+}
+
+nav img {
+    width: 200px;
+    height: 150px;
+    margin-left: -50px;
+    margin-top: -30px;
+    transition: 0.5s;
+}
+
+nav img:hover {
+    opacity: 0.5;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: rgb(216, 230, 236);
+    text-decoration: none;
+    font-size: 13px;
+    font-style: 'poppins', sans-serif;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #36a2f4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+.footer-dark {
+    padding: 50px 0;
+    color: #76cf6e;
+    background-color: #172a3b;
+    font-size: 10px;
+  
+}
+
+.footer-dark .itemtext h4 {
+    
+   
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: -28px;
+
+}
+
+.footer-dark .itemtext p {
+    opacity: 0.6;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size: xx-large;
+    font-style: oblique;
+    color: rgb(8, 241, 241);
+    text-align: center;
+   
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    margin-top: -10px;
+    padding-top: 1px;
+    opacity: 0.5;
+    font-size: 15px;
+    margin-bottom: 0;
+    color: aquamarine;
+}
+

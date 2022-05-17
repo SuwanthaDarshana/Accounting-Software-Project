@@ -1,0 +1,43 @@
+
+html {
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.back1{
+    margin-top:20px; 
+    margin-left:20px; 
+    padding: 6px; 
+    width:80px; 
+    font-size: 20px; 
+    border-radius:8px; 
+    background: #1282ba; 
+    color: white; 
+    cursor:pointer;
+}
+
+.full {
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full-content{
+    position: relative;
+    min-width: 600px;
+    background: #fcfcfc;
+    border-radius:8px;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+    transition: box-shadow 0.6s;
+}
+.answer{
+    position: relative;
+    min-width: 400px;
+    background: #f3f0f0;
+    border-radius:8px;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+    transition: box-shadow 0.6s;
+}

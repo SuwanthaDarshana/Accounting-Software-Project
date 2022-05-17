@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="acc.js"></script>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accounting project</title>
+    <link rel="stylesheet" href="depreciation2.css" />
+  </head>
+  <body>
+    <a href="../calculation/calculation.html"><button class="back2">Back</button></a>
+    <div class="full">
+    <div class="full-content">
+      <table class="table">
+        <tr class="header">
+          <th
+            colspan="2"
+            style="border-radius: 5px; padding-left: 20px; padding-right: 20px"
+          >
+            <h1>Depreciation Method 2 (RBB)</h1>
+          </th>
+        </tr>
+
+        <tr>
+          <td>
+            <h3>Purchase Cost:</h3>
+          </td>
+          <td>
+            <input type="text" name="Cost" id="cost" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3>Scrap Value:</h3>
+          </td>
+          <td>
+            <input type="text" name="Scrap" id="scrap" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3>Useful Life:</h3>
+          </td>
+          <td>
+            <input type="text" name="Life" id="life" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="submit" class="submit" onclick="rbb()" />
+          </td>
+          <td>
+            <input type="Reset" name="submit" class="submit" onclick="rbb2()" />
+          </td>
+        </tr>
+      </table>
+      <div class="output">
+        <td colspan="2">
+          <h2 id="out1"></h2>
+          <h2 id="out2"></h2>
+          <h2 id="out3"></h2>
+        </td>
+      </div>
+    </div>
+  </div>
+    <script src="depreciation2.js"></script>
+  </body>
+</html>

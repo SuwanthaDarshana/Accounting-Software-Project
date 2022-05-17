@@ -1,0 +1,66 @@
+<html>
+    <script src="Depreciation3.js"></script>
+    <head>
+        <title>
+            Depreciation-03
+        </title>
+        <link rel="stylesheet" href="Depreciation3.css" />
+    </head>
+    <body>
+        <a href="../calculation/calculation.html"><button class="back1">Back</button></a>
+        <div class="full">
+    <div class="full-content">
+  
+    <table>
+        <tr>
+            <th colspan="2" style="background-color: #1282ba; border-radius: 5px; color: white; column-width: 600px;" ><h2>Depreciation Mothod 3 (PUB)</h2></th>
+        </tr>
+        <tr>
+            <td><br>
+                <h3><pre>Purchased Amount(Cost)        :</pre></h3>
+            </td>
+            <td><br><br>
+                <input type="text" name="cost" id="cost"  /><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><pre>Residual(scrap) Value         :</pre></h3>
+            </td>
+            <td>
+                <input type="text" name="scrap" id="scrap" /><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><pre>Number of Units               :</pre></h3>
+            </td>
+            <td>
+                <input type="text" name="unit" id="unit" /><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><pre>Production units per year     :</pre></h3>
+            </td>
+            <td>
+                <input type="text" name="punit" id="punit" /><br><br>
+            </td>
+        </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="Submit" onclick="cal1()" style="background-color: #1282ba; color: white; border-radius: 5px; cursor: pointer;">
+                    <input type="Reset" name="Submit" onclick="cal2()" style="background-color: #1282ba; color: white; border-radius: 5px; cursor: pointer;"><br>
+                </td>
+               
+            </tr>
+    </table>
+     <br>
+      <div  class="answer">
+        <h2 ><pre id="value">This Year depreciation value = LKR:</pre> </h2>
+        <h2 ><pre id="total">Total depreciation value     = LKR:</pre></h2>
+    </div>
+    </div>
+</div>
+    </body>
+</html>

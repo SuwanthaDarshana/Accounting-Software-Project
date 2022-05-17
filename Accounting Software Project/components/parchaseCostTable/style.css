@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.purchase-cost-container {
+    position: relative;
+    min-width: 600px;
+    background: #fcfcfc;
+    border-radius:8px;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    transition: box-shadow 0.6s;
+}
+
+.purchase-cost-container:hover {
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 540px) {
+    .purchase-cost-container {
+        min-width: unset;
+        width: 100%; 
+    }
+}
+
+/* paperclip */
+
+.paperclip {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -10px;
+    right: 0px;
+    cursor: pointer;
+}
+
+
+.paperclip img {
+    width: 50px;
+    height: 50px;  
+}
+
+.paperclip:hover {
+    animation: paperclip 0.1s;
+}
+
+@keyframes paperclip {
+    0% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
+}
+
+/* tips */
+
+.tip {
+    position: absolute;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+    z-index: -99;
+    right: 0px;
+    margin: 10px;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.15);
+    transition: right 0.5s;
+}
+
+.tip h2 {
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.tip p {
+    font-size: 1.4rem;
+}
+
+.tip img {
+    width: 100%;
+    max-height: 120px;
+    object-fit: contain; 
+}
+
+
+/* control-panel */
+
+.control-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: inset -2px -2px 10px #fff, -2px -2px 7px #efefef, 2px 2px 7px #f0f0f0;
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: box-shadow 0.4s;
+}
+
+.card p {
+    margin: 2px;
+    padding: 0;
+}
+
+
+.card:hover {
+    background: #fff;
+    box-shadow: inset -2px -2px 10px #fff, -2px -2px 7px #ebebeb, 2px 2px 7px #e3e2e2;
+}
+
+
+
+
+/* table */
+
+.table-container {
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: inset -2px -2px 10px #fff, -2px -2px 7px #efefef, 2px 2px 7px #f0f0f0;
+}
+
+.cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.8rem;
+    text-align: left;
+    border-radius: 8px;
+    background: #fcfcfc;
+    overflow: hidden;
+   
+}
+
+
+.cost-table tr {
+    position: relative;
+}
+
+.cost-table tr > th {
+    letter-spacing: .15rem;
+}
+
+.cost-table tr > th,
+.cost-table tr > td {
+    width: 70%;
+}
+
+.cost-table thead tr {
+    background-color: #1282ba;
+    color: #fff;
+}
+
+.cost-table th, 
+.cost-table td {
+    padding: 10px 5px;
+}
+
+.cost-table td {
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.cost-table tr td:nth-child(1) {
+    border-right: 1px solid rgb(215, 215, 215);
+}
+
+.cost-table tfoot {
+    text-align: left;
+}
+
+
+.cost-table tfoot th:nth-child(2) {
+    background-color: rgb(247, 247, 247);
+}
+
+/* input */
+
+.input {
+    border: 0; 
+    outline: 0;
+    width: 100%;
+    background: transparent;
+    font-size: 2rem;
+}
+
+
+.row-template {
+    display: none;
+}
+
+
+/* contextmenu */
+
+.contextmenu {
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 150px;
+    top: 0;
+    left: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    background: #fff;
+    overflow: hidden;
+}
+
+.contextmenu__item {
+    padding: 10px;
+    transition: background 0.6s; 
+}
+
+.contextmenu__item.item--add:hover {
+    background: #28a745;
+    color: #fff;
+}
+
+.contextmenu__item.item--remove:hover {
+    background: #dc3545;
+    color: #fff;
+}
+
+.contextmenu__item.item--copy:hover,
+.contextmenu__item.item--paste:hover {
+    background: rgb(236, 236, 236);
+}
+
+
+/* btn-back-container */
+
+.btn-back-container {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    padding: 8px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn--back {
+    background: #1282ba;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

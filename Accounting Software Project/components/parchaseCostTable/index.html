@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔥Purchase cost of the PPE🔥</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="btn-back-container">
+      <button class="btn btn--back" onclick="history.back()">Back</button>
+    </div>
+
+    <div class="purchase-cost-container">
+      <!-- tips -->
+      <section>
+        <div id="btn-tip" class="paperclip">
+          <img src="assets/images/paperclip.svg" alt="" />
+          <span>Tips</span>
+        </div>
+        <section id="tip-container" class="tip-container">
+          <article class="tip">
+            <h2>Right Click Menu</h2>
+            <p>
+              You can add new fields, delete fields, copy and paste fields using
+              right click menu
+            </p>
+            <img src="assets/images/tip-0.jpg" alt=" " />
+          </article>
+
+          <article class="tip">
+            <h2>Naming Your Fields</h2>
+            <p>
+              If you add &ldquo;-&rdquo; or &ldquo;Less-&rdquo; prefixes to your
+              names, then the table will identify those as negative values.
+            </p>
+            <img src="assets/images/tip-1.jpg" alt="" />
+          </article>
+        </section>
+      </section>
+      <!-- control panel -->
+      <section>
+        <div class="control-container">
+          <div id="create-blank" class="card card--blank">
+            <img src="assets/images/sheet-blank.svg" alt="" width="40px" />
+            <p>Blank</p>
+          </div>
+          <div id="create-template" class="card card--template">
+            <img src="assets/images/sheet-template.svg" alt="" width="40px" />
+            <p>Template</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- table -->
+      <section>
+        <div class="table-container">
+          <table class="cost-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Price (LKR)</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="row-template">
+                <td>
+                  <input
+                    class="input input--name"
+                    type="text"
+                    name="label"
+                    autocomplete="off"
+                    placeholder="e.g. sales or -parchases or Less-parchases"
+                  />
+                </td>
+
+                <td>
+                  <input
+                    class="input input--price"
+                    type="number"
+                    name="amount"
+                    autocomplete="off"
+                    required
+                  />
+                </td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <th>Total purchase cost</th>
+                <th id="total-cost">LKR 0.00</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div id="contextmenu" class="contextmenu">
+      <div id="add-field" class="contextmenu__item item--add">Add Field</div>
+      <div id="remove-field" class="contextmenu__item item--remove">
+        Delete Field
+      </div>
+      <div id="copy-field" class="contextmenu__item item--copy">Copy</div>
+      <div id="paste-field" class="contextmenu__item item--paste">Paste</div>
+    </div>
+
+    <script src="js/field.js"></script>
+    <script src="js/contextmenu.js"></script>
+    <script src="js/tips.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
